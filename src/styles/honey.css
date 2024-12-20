@@ -1,0 +1,111 @@
+/* Основной стиль */
+body {
+    background-color: #f8e71c; /* Светлый медовый фон */
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Темный текст */
+}
+
+.honey-item-p {
+    font-size: 16px;
+    line-height: 0.2; /* Расстояние между строками */
+    letter-spacing: 0.5px; /* Расстояние между буквами */
+    margin-bottom: 10px;
+}
+
+/* Заголовок */
+h1, h2, h3 {
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    color: #c29200; /* Теплый оранжевый */
+}
+
+h2 {
+    font-size: 2em;
+    color: #e6b800; /* Яркий желтый */
+}
+
+/* Кнопки */
+button {
+    background-color: #e6b800; /* Яркий желтый */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d5a000; /* Более темный оранжевый */
+}
+
+/* Эффект сот (с градиентом) */
+.honeycomb-gradient {
+    background-size: 200% 200%;
+    background: linear-gradient(to bottom, #f8e71c, #f0e09f) 0 0;
+    animation: honey-gradient 8s linear infinite; /* Анимация градиента */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(25% - 20px); /* Ширина 25% экрана минус отступы */
+    margin: 10px; /* Отступы между карточками */
+}
+
+.honeycomb-container { /* Контейнер для карточек */
+    display: flex;
+    flex-wrap: wrap; /* Размещение в несколько рядов */
+    justify-content: space-between; /* Распределение карточек по ширине */
+    padding: 20px;
+}
+
+.add-honey-form {
+    width: calc(1/3 * 100%); /* Ширина 1/3 экрана */
+    margin-left: 0; /* Отступ слева */
+    margin-right: auto; /* Автоматический отступ справа */
+    padding: 20px;
+    border-radius: 10px; /* Закругленные углы */
+    background-color: #f8e71c; /* Цвет фона */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+.add-honey-form input,
+.add-honey-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Включаем padding в ширину */
+}
+
+.add-honey-form button {
+    /* ... ваш существующий код ... */
+    width: 100%; /* Занимает всю ширину формы */
+}
+
+.honey-container {
+    display: flex; /* Используем Flexbox */
+    justify-content: space-around; /* Распределяем элементы с равными отступами */
+    padding: 20px;
+}
+
+.filter-input {
+    /* Ширина 1/3 экрана */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.filters-container {
+    display: flex;
+    flex-direction: column; /* Расположение элементов по вертикали */
+    width: calc(1/3 * 100%);
+    gap: 10px; /* Отступ между фильтрами */
+}
